@@ -1,0 +1,29 @@
+# OS
+.DS_Store
+
+# Maven / Build
+target/
+*.jar
+*.war
+*.ear
+dependency-reduced-pom.xml
+.mvn/wrapper/maven-wrapper.jar
+
+# Logs
+*.log
+logs/
+
+# IDEs
+.idea/
+*.iml
+.project
+.classpath
+.settings/
+.vscode/
+
+# Java / Annotation processors
+hs_err_pid*
+
+# Misc
+tmp/
+.env

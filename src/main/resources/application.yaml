@@ -1,0 +1,19 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /jasper
+
+spring:
+  datasource:
+    url: jdbc:h2:mem:demo_jasper;DB_CLOSE_DELAY=-1;MODE=MySQL
+    driver-class-name: org.h2.Driver
+    username: sa
+    password:
+  jpa:
+    hibernate:
+      ddl-auto: create
+    show-sql: true
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
