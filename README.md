@@ -59,7 +59,7 @@ spring:
 ## Dữ liệu mẫu (seed)
 - Departments: 5 phòng ban (Engineering, QA, HR, Sales, Finance)
 - Projects: 5 dự án (Apollo, Zephyr, Orion, Helios, Hyperion)
-- Employees: ~300 nhân viên ngẫu nhiên (tên, chức danh, lương, ngày vào, phòng ban)
+- Employees: 100 nhân viên ngẫu nhiên (tên, chức danh, lương, ngày vào, phòng ban)
 
 ## Cấu trúc chính
 ```
@@ -88,11 +88,7 @@ src/
 			projects.jrxml
 ```
 
-## Ghi chú & mở rộng
-- Mặc định không cần MySQL; muốn dùng MySQL có thể thêm profile `mysql` và cấu hình datasource phù hợp.
-- Có thể bổ sung report có grouping/subtotal (ví dụ Employees by Department), tham số lọc (date range, min salary, department).
-- Với dataset lớn, cân nhắc cache report đã compile (.jasper) và cấu hình exporter để tiết kiệm bộ nhớ.
-
 ---
+
 Tham khảo JasperSoft Studio (tùy chọn để thiết kế JRXML):  
 https://community.jaspersoft.com/project/jaspersoft-studio/releases
